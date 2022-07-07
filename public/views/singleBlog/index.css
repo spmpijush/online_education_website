@@ -1,0 +1,204 @@
+.container2{
+    width: calc(100vw - 20vw);
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    /* border: 1px solid rgb(21, 200, 255); */
+}
+.blog_image{
+    width: 100%;
+    height: 450px;
+}
+.blog_action{
+    display: flex;
+    justify-content: space-around;
+    padding: 7px 0;
+    margin: 7px 0;
+    border-bottom: 1px solid rgb(116, 110, 110);
+}
+.blog_like_disLike i{
+    display: inline-block;
+    margin: 0 20px !important;
+    cursor: pointer;
+}
+i{
+    cursor: pointer;
+}
+.recent_post_img_box{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.recent_post_content_box{
+    background-color: rgb(255, 255, 255);
+    padding: 5px 0;
+}
+.recent_post_main h3{
+    border-bottom: 1px solid rgb(66, 63, 63);
+    padding-bottom: 5px;
+    margin-left: 5px;
+}
+.form-control{
+    height: 40px;
+}
+.search_box_color{
+    background-color: aliceblue;
+    padding: 20px 10px;
+}
+.search_box_main{
+    position: relative;
+}
+.search_box_main i{
+    position: absolute;
+    right: 1px;
+    top: 0.5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(49, 108, 245);
+    display: inline-block;
+    padding: 10.5px 40px;
+    border-radius: 0px 5px 5px 0px;
+    
+}
+.search_box_main i:hover{
+    background-color: rgba(49, 108, 245, 0.849);
+    color: rgb(232, 233, 240);
+}
+.blog_and_artical{
+    border-bottom: 2px solid rgb(209, 202, 202);
+    padding-bottom: 10px;
+}
+.form-control:focus {
+    border: 1px solid rgb(0, 236, 98) !important;
+}
+.category_main_section{
+    background-color: aliceblue;
+    padding: 20px 0;
+}
+.category_main_section h3{
+    border-bottom: 1px solid rgb(66, 63, 63);
+    padding-bottom: 5px;
+    margin-left: 5px;
+}
+.category_main_section ul {
+    margin-left: 0rem !important;
+    padding-left: 0rem !important;
+}
+.recent_post_main{
+    background-color: aliceblue;
+    padding: 20px 0;
+}
+.recent_post_content_box_main{
+    height: 720px;
+    overflow-y: scroll;
+    /* background-color: aliceblue; */
+}
+.recent_post_content_box_main::-webkit-scrollbar{
+    display: none;
+}
+.main_blog_artical_section{
+    /* border: 1px solid rebeccapurple; */
+    padding: 10px 2px;
+}
+.main_blog_artical_section_section{
+    background-color: aliceblue;
+}
+.main_blog_artical_section button{
+    font-size: 15px;
+}
+.blog_img_box{
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+}
+.blog_tag_user span{
+    margin: 0 5px;
+}
+.comment_user_img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+.form_comment_box input{
+    font-size: 16px;
+    height: 40px;
+}
+.form_comment_box a{
+    font-size: 16px;
+    width: 100px;
+}
+.form_comment_box textarea{
+    font-size: 16px;
+    height: 80px;
+}
+.form_comment_box textarea:focus{
+    box-shadow: none;
+}
+.card-footer a{
+    font-size: 16px;
+    width: 110px;
+}
+.comment_list_box_main{
+    padding: 10px;
+    background-color: aliceblue;
+    height: 700px;
+    overflow: scroll;
+}
+.comment_list_box_main::-webkit-scrollbar{
+    display: none;
+}
+.form_comment_box{
+    padding: 10px;
+    background-color: aliceblue;
+}
+.main_blog_content{
+    padding: 10px;
+    background-color: aliceblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container2{
+        width: 98vw;
+    }
+    .form-control{
+        height: 34px;
+    }
+    .blog_image{
+        width: 100%;
+        height: 180px;
+    }
+    .comment_user_img{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+    
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

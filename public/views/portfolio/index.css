@@ -1,0 +1,122 @@
+
+/* ================ PORTFOLIO SECTION CSS CODE END ================== */
+.main_portfolio_section h1{
+   font-size: 4rem;
+}
+.portfolio_box{
+    box-shadow: var(--outer-shadow);
+    position: relative;
+}
+.portfolio_box h2{
+    padding-top: 10px;
+    margin-bottom: 0rem !important;
+    text-shadow: 2px 2px 3px rgb(148, 143, 143);
+    font-size: 2.3rem;
+}
+.portfolio_box .fa-paper-plane{
+    position: absolute;
+    left: 28px;
+    animation:sendbutton alternate infinite 0.6s;
+}
+@keyframes sendbutton {
+    to{transform: translateX(20px);}
+}
+.portfolio_img_style{
+    width: 100%;
+    height: 200px;
+    padding: 12px;
+    transition: 0.5s ease-in-out;
+    transform: scale(0.95);
+    box-shadow: var(--inner-shadow);
+}
+.view_all_project{
+	font-size: 1.8rem;
+	border: none;
+	background-color:var(--box-color);
+	color: var(--btn1-color);
+	display: inline-block;
+	padding: 5px 15px;
+	border-radius: 5px;
+    box-shadow: var(--outer-shadow);
+	/* text-shadow: 1px 1px 2px rgb(29, 28, 29); */
+	transition: 0.3s ease-in-out;
+  }
+  .view_all_project:hover{
+	/* background-color: rgb(191, 1, 230); */
+	transform: translateX(5px);
+  }
+.main_portfolio_section .portfolio_box{
+    background-color: var(--box-color);
+}
+.price{
+    font-size: 35px;
+    color: #00ff13;
+}
+.start_and_preview{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.portfolio_item_heading{
+    padding: 15px 0;
+}
+.start_and_preview .fa-star{
+    color: #bac700;
+}
+.start_and_preview .fa-cart-plus{
+    margin: 0 10px;
+    padding: 9px;
+    border: 1px solid rgb(136, 130, 130);
+    color: #00ff13;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.start_and_preview .fa-cart-plus:hover{
+    background-color: #ff0095;
+    color: white;
+}
+.start_and_preview .live_preview_button{
+    display: inline-block;
+    outline: none !important;
+    border: none;
+    background-color: #01697c;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+}
+.portfolio_box:hover .portfolio_img_style{
+    transform: scale(1);
+}
+.hover_view_more{
+    /* border: 1px solid red !important; */
+    overflow: hidden;
+    z-index: 2;
+    width: 95%;
+    position: absolute;
+    top: 10px;
+    left: 9px;
+    margin: auto;
+    height: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    background-color: #20ccbe6b;
+    transition: 0.5s ease-in-out all;
+}
+.portfolio_box:hover .hover_view_more{
+    visibility: visible;
+    height: 150px;
+}
+.hover_view_more a{
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid rgb(172, 240, 214);
+    color: white;
+    transition: 0.3s ease-in-out all;
+}
+.hover_view_more a:hover{
+    background-color: #006b7e;
+    color: white;
+}
+/* ================ PORTFOLIO SECTION CSS CODE END ================== */

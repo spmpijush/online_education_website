@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;1,200;1,400;1,600&family=Roboto:wght@300&display=swap');
+.left_side_cv{
+    background-color: rgba(98, 98, 245, 0.699);
+}
+.cv_main_section{
+    width: calc(100vw - 35vw);
+    margin: 0 auto;
+    background-color: white;
+}
+.cv_main_color{
+    background-color: rgba(42, 42, 236, 0.767);
+}
+.cv_img_box{
+    text-align: center; 
+}
+.cv_img{
+   border-radius: 50%;
+   padding: 10px;
+   width: 280px;
+   height: 280px;
+}
+.progress{
+    height: 16px !important;
+    font-size: 11px;
+}
+.contact h1 ,.skils h1 ,.hobies h1{
+    background-color:  rgba(42, 42, 236, 0.767);
+}
+.contact p{
+    font-size: 19px;
+    margin-bottom: 5px !important;
+    padding-bottom: 5px !important;
+    color: white;
+}
+.skils label{
+    color: white;
+    margin: 3px 0;
+}
+.contact_section_img{
+    width: 45px;
+    height: 45px !important;
+    border-radius: 50%;
+    font-family:'Nunito', sans-serif;
+}
+.hobies_sub_section{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 0;
+}
+
+/* ================= RIGHT SIDE CONTENT START ============== */
+.right_side_content{
+    border-left: 4px solid  rgba(42, 42, 236, 0.767);
+    margin-left: 20px;
+    
+}
+.icon_box{
+    /* border: 1px solid red; */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:  rgba(42, 42, 236, 0.767);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    transform: translateX(-28px);
+}
+.heading{
+    display: inline-block;
+    margin: 0 !important;
+    line-height: 1;
+    padding-top: 10px;
+}
+.icon_box_img{
+    width: 35px;
+    height: 35px !important;
+    border-radius: 50%;
+    font-family:'Nunito', sans-serif;
+}
+.education_part span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color:  rgb(0, 26, 255);
+    transform: translateX(-10px);
+    border-radius: 50%;
+}
+.education_part h3{
+    display: inline-block;
+    border-bottom: 2px solid rgb(71, 67, 67);
+    padding-bottom: 5px;
+    margin-bottom: -2px !important;
+    line-height: 1;
+}
+.work_experience{
+    padding-bottom: 0 !important;
+    margin-bottom: 2px !important;
+}
+.project_overview h3{
+    background-color:  rgb(0, 26, 255);
+    text-align: center;
+    padding: 8px 0;
+    color: white;
+    font-size: 16px;
+}
+
+/* ================= RIGHT SIDE CONTENT END =ss============= */
+
+
+/* media query */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .cv_main_section{
+        width: 98vw;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

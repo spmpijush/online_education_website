@@ -1,0 +1,176 @@
+
+.container2{
+    width: calc(100vw - 30vw);
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    border: 1px solid rgb(21, 200, 255);
+}
+.resume_content_part{
+    padding: 5px;
+}
+p{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.img_box{
+    text-align: center;
+}
+.resume_image{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.position{
+    font-size: 20px;
+}
+.name_and_position_main{
+    position: relative;
+    height: 123px;
+    /* border: 1px solid red; */
+}
+.name_and_position{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 30px;
+}
+.resume_contact ,.resume_hobby_text{
+    border-bottom: 2px solid rgb(134, 131, 131);
+    padding-bottom: 10px;
+    margin-left: 5px;
+}
+.resume_location i{
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgb(226, 241, 255);
+    margin-left: 5px;
+}
+
+.resume_profile_main ,.resume_work_main  ,.resume_education_main {
+    border-left: 3px solid rgb(17, 137, 218);
+    padding-left: 10px;
+}
+.main_resume_right_side .fa-user-circle ,.main_resume_right_side .fa-briefcase
+ ,.main_resume_right_side .fa-university ,.main_resume_right_side .fa-arrows-alt-h ,.main_resume_right_side .fa-address-card{
+    transform: translate(-16.7px , -0px);
+    font-size: 20px;
+    background-color: rgb(17, 137, 218);
+    color: white;
+    padding: 8px;
+    border-radius: 50%;
+}
+.resume_profile ,.resume_work ,.resume_education{
+    border-bottom: 2px solid rgb(134, 131, 131);
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin: 0 10px 10px 10px;
+}
+.resume_profile_main p ,.resume_work_main p {
+    padding-left: 20px !important;
+}
+.resume_location_text{
+    margin-top: 5px;
+}
+.resume_education_text{
+    margin-left: 15px !important;
+}
+.resume_education_text strong{
+    border-bottom: 2px solid rgb(143, 138, 138);
+    width: 40%;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+    color: rgb(102, 104, 105);
+}
+.social_media_icon {
+    display: flex;
+    justify-content: space-around;
+}
+.social_media_icon i{
+    background-color: rgb(226, 241, 255);
+    padding: 10px;
+    border-radius: 50%;
+}
+.resume_hobby_icon {
+    display: flex;
+    justify-content: space-around;
+}
+.resume_hobby_icon i{
+    background-color: rgb(226, 241, 255);
+    padding: 10px;
+    border-radius: 50%;
+}
+.skils_icon_and_text i{
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    color: rgb(77, 78, 80);
+}
+table{
+    table-layout: auto;
+    width: 100%;  
+}
+th,td{
+    width:150px;
+}
+.gallery_main_box{
+    background-color: rgb(226, 241, 255);
+}
+.resume_work_sub{
+    border-left: 3px solid rgb(83, 86, 250);
+    padding: 0 15px;
+}
+.resume_work_sub p{
+    padding-left: 0rem !important;
+}
+.fa-circle{
+    transform: translateX(-24px);
+    color: rgb(83, 86, 250);
+}
+/* .main_resume_right_side .fa-briefcase{
+    transform: translate(-13.5px , -2px);
+    font-size: 30px;
+} */
+
+
+
+
+/* media query */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container2{
+        width: 98vw;
+    }
+    .name_and_position{
+        padding: 5px;
+    }
+    .position{
+        font-size: 15px;
+    }
+    .main_resume_right_side{
+        padding-left: 10px;
+    }
+    th,td{
+        width:200px !important;
+    }
+    .fa-circle{
+        transform: translateX(-22px);
+        color: rgb(83, 86, 250);
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

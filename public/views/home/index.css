@@ -1,0 +1,677 @@
+
+/* ================ HOME MAIN SECTION CSS CODE END ================== */
+.main_full_screen{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.726),rgba(0, 0, 0, 0.808)), url('../../uploads/images/bg2.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.full_screen{
+    padding: 50px 0;
+    min-height: 85vh;
+}
+.home_text{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+ .home_text,
+ .home_img{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+    /* border: 1px solid red; */
+}
+ .home_text p{
+    font-size: 2.8rem;
+    color: var(--text-white);
+}
+ .home_text h2{
+    font-size: 6.3rem;
+    font-weight: 700;
+    color: var(--text-white);
+    margin: 15px 0;
+}
+ .home_text h1{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--text-white);
+    margin: 10px 0;
+}
+.home_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+
+}
+
+.home_img .home_img_box{
+    width: 450px;
+    height: 450px;
+    /* border: 3px solid rgb(32, 98, 241); */
+    background-color: transparent;
+    position:absolute;
+    border-radius: 50%;
+    /* overflow: hidden; */
+    box-shadow: 3px 3px 4px rgb(255, 255, 255)
+                -3px -3px 4px rgba(255, 255, 255, 0.836);
+}
+
+/* ================ CIRCLE ANIMATION START ================= */
+.img_circle{
+    width:450px;
+    height:450px;
+    border:3px solid rgb(26, 48, 248);
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.main{
+    width:450px;
+    height:450px;
+    position:absolute;
+    margin:auto;
+    border-radius:50%; 
+  }
+.circle{
+    width:30px;
+    height:30px;
+    background:rgb(0, 38, 255);
+    border-radius:50%;
+    z-index: 2;
+    position:absolute;
+    top:0; bottom:0; left:0;right:0;
+    overflow:hidden;
+    margin:auto;
+    animation: circle 6s linear infinite;
+  }
+  
+  @keyframes circle{
+    0%{
+      transform:rotate(0deg)
+                translate(-225px)
+                rotate(0deg);
+    
+    }
+    100%{
+      transform:rotate(360deg)
+                translate(-225px)
+                rotate(-360deg);
+    }
+  }
+  
+  
+/* ================ CIRCLE ANIMATION END ================= */
+
+.display_img{
+    position: relative;
+    width: 450px;
+    height: 500px;
+    /* z-index: -1000000; */
+    /* overflow: hidden; */
+    animation: zoomef infinite alternate 0.8s ;
+}
+@keyframes zoomef {
+    to{transform: scale(0.9);}
+}
+.home_text .home_a_teg{
+    display: inline-block;
+    font-size: 2.6rem;
+    /* background-color: var(--btn1-color); */
+    border: 3px solid rgb(0, 60, 255);
+    padding: 6px 15px;
+    margin: 10px 20px;
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgb(85, 0, 85);
+    transition: 0.3s ease-in-out;
+}
+.home_text .home_b_teg{
+    display: inline-block;
+    font-size: 2.6rem;
+    /* background-color: var(--btn1-color); */
+    background-color: none;
+    border: 3px solid rgb(0, 60, 255);
+    padding: 6px 15px;
+    margin: 10px 20px;
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgb(85, 0, 85);
+    transition: 0.3s ease-in-out;
+}
+.home_text .home_a_teg:hover ,.home_text .home_b_teg:hover{
+    /* background-color: rgb(43, 177, 255); */
+    color: rgb(255, 255, 255);
+    /* text-shadow: 2px 2px 2px rgb(112, 8, 107); */
+	transform: translateX(5px);
+}
+
+/* ================ HOME MAIN SECTION CSS CODE END ================== */
+
+
+/* ================ ABOUT SECTION CSS CODE END ================== */
+.main_about_section h1{
+    font-size: 4rem;
+}
+.about_img_box{
+    display: flex;
+    justify-content: center;
+    /* border-radius: 19px; */
+    background: var(--box-color);
+    box-shadow:  var(--inner-shadow); 
+    border-radius: 10px;
+    padding: 10px;
+}
+.btn_3{
+    /* margin-top: 30px; */
+    padding: 10px 25px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color:rgb(10, 104, 245);
+    background-color: transparent;
+    line-height: 1.5;
+    cursor: pointer;
+    border-radius: 30px;
+    display: inline-block;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  .btn_3.active{
+      box-shadow: var(--inner-shadow) !important;
+  }
+  
+  .btn_3::after{
+    border-radius: 30px;
+  }
+.about_img_box .about_img{
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: var(--outer-shadow);
+}
+.about_me_section p{
+    font-size: 2.2rem;
+}
+.about_me_section .view_my_cv ,.about_me_section .hire_me{
+    font-size: 2rem;
+    display: inline-block !important;
+    padding: 8px 15px;
+    background-color: var(--box-color);
+    color: var(--btn1-color);
+    border-radius: 5px;
+    margin: 20px 10px;
+    transition: 3s ease-in-out;
+    box-shadow: var(--outer-shadow);
+}
+.about_me_section .view_my_cv:hover ,.about_me_section .hire_me:hover{
+    box-shadow: var(--inner-shadow);
+	/* transform: translateX(5px); */
+}
+/* ================ ABOUT SECTION CSS CODE END ================== */
+
+/* ================ SERVICES SECTION CSS CODE END ================== */
+.main_services_section h1{
+    font-size: 4rem;
+}
+.main_services_section{
+    margin-top: 9rem!important;
+}
+.main_services_section p{
+    font-size: 2rem;
+}
+.services_box{
+    background-color: var(--box-color);
+    border-radius: 5px;
+    padding: 15px;
+    transition: 0.3s ease-in-out;
+    box-shadow: var(--outer-shadow);
+    height: 360px;
+    overflow: hidden;
+}
+.services_box:hover{
+    
+    transform: translateY(-5px);
+}
+.services_box .icon_style{
+    width: 70px;
+    height: 70px;
+    padding: 16px ;
+    
+    font-size: 3.2rem;
+    background-color: var(--box-color);
+    color: #0066ff;
+    border-radius: 50%;
+    box-shadow: var(--outer-shadow);
+    margin: 10px 0;
+    transition: all ease-in-out 0.4s;
+}
+.services_box .icon_style:hover{
+    box-shadow: var(--inner-shadow);
+}
+.services_box h2{
+    font-size: 2.8rem;
+    margin-bottom: 8px;
+}
+.services_box p{
+    font-size: 1.9rem;
+}
+/* ================ SERVICES SECTION CSS CODE END ================== */
+
+
+
+/* ================ PORTFOLIO SECTION CSS CODE END ================== */
+.main_portfolio_section h1{
+   font-size: 4rem;
+}
+.portfolio_box{
+    box-shadow: var(--outer-shadow);
+    position: relative;
+}
+.portfolio_box h2{
+    padding-top: 10px;
+    margin-bottom: 0rem !important;
+    text-shadow: 2px 2px 3px rgb(148, 143, 143);
+    font-size: 2.3rem;
+}
+.portfolio_box .fa-paper-plane{
+    position: absolute;
+    left: 28px;
+    animation:sendbutton alternate infinite 0.6s;
+}
+@keyframes sendbutton {
+    to{transform: translateX(20px);}
+}
+.portfolio_img_style{
+    width: 100%;
+    height: 200px;
+    padding: 12px;
+    transition: 0.5s ease-in-out;
+    transform: scale(0.95);
+    box-shadow: var(--inner-shadow);
+}
+.view_all_project{
+	font-size: 1.8rem;
+	border: none;
+	background-color:var(--box-color);
+	color: var(--btn1-color);
+	display: inline-block;
+	padding: 5px 15px;
+	border-radius: 5px;
+    box-shadow: var(--outer-shadow);
+	/* text-shadow: 1px 1px 2px rgb(29, 28, 29); */
+	transition: 0.3s ease-in-out;
+  }
+  .view_all_project:hover{
+	/* background-color: rgb(191, 1, 230); */
+	transform: translateX(5px);
+  }
+.main_portfolio_section .portfolio_box{
+    background-color: var(--box-color);
+}
+.price{
+    font-size: 35px;
+    color: #00ff13;
+}
+.start_and_preview{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.portfolio_item_heading{
+    padding: 15px 0;
+}
+.start_and_preview .fa-star{
+    color: #e1f100;
+}
+.start_and_preview .fa-cart-plus{
+    margin: 0 10px;
+    padding: 9px;
+    border: 1px solid rgb(136, 130, 130);
+    color: #0066ff;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.start_and_preview .fa-cart-plus:hover{
+    background-color: #ff0095;
+    color: white;
+}
+.start_and_preview .live_preview_button{
+    display: inline-block;
+    outline: none !important;
+    border: none;
+    /* background-color: #01697c; */
+    border: 1px solid rgb(34, 74, 255);
+    padding: 5px;
+    color: rgb(28, 88, 253);
+    cursor: pointer;
+}
+.portfolio_box:hover .portfolio_img_style{
+    transform: scale(1);
+}
+.hover_view_more{
+    /* border: 1px solid red !important; */
+    overflow: hidden;
+    z-index: 2;
+    width: 95%;
+    position: absolute;
+    top: 10px;
+    left: 9px;
+    margin: auto;
+    height: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    background-color: #20ccbe6b;
+    transition: 0.5s ease-in-out all;
+}
+.portfolio_box:hover .hover_view_more{
+    visibility: visible;
+    height: 150px;
+}
+.hover_view_more a{
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid rgb(172, 240, 214);
+    color: white;
+    transition: 0.3s ease-in-out all;
+}
+.hover_view_more a:hover{
+    background-color: #006b7e;
+    color: white;
+}
+/* ================ PORTFOLIO SECTION CSS CODE END ================== */
+
+
+
+/* ================ MY SKILS SECTION CSS CODE START ================== */
+.main_skiils_section h1{
+    font-size: 4rem;
+}
+.progress_bar_color{
+    /* background-image: linear-gradient(to left, #00ff13, #65fd4f, #8dfa73, #abf793, #c4f3b2); */
+    /* background-image: linear-gradient(to right, #cad7ec, #92b6fa, #5d91ff, #2a69ff, #1437ff); */
+    background-image: linear-gradient(to right, #cad7ec, #9fbcf2, #76a0f6, #4d83f8, #1e64f5);
+}
+.progress{
+    background-color: rgb(248, 248, 248);
+    box-shadow: var(--inner-shadow);
+}
+.sub_skils_bg_colo{
+    background-color: var(--box-color);
+    box-shadow: var(--outer-shadow);
+    padding: 20px;
+}
+/* ================ MY SKILS SECTION CSS CODE END ================== */
+
+
+
+/* ================ CLINT SAY SECTION CSS CODE END ================== */
+.main_clint_say_section{
+    margin: 30px 0;
+}
+.main_clint_say_section h1{
+    font-size: 4rem;
+}
+.main_clint_say_section p{
+    font-size: 1.5rem;
+}
+.carousel{
+    position: relative;
+    height: 50vh;
+    margin: 10px 0;
+    background-color: var(--box-color);
+    box-shadow: var(--outer-shadow);
+  }
+  .carousel-inner{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+  }
+  .clint_say_img{
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background-color: var(--box-color);
+      box-shadow: var(--inner-shadow);
+  }
+  .clint_comment_box{
+      position: relative;
+  }
+  .clint_comment_box .fa-quote-left{
+      position: absolute;
+      top: -40px;
+      font-size: 3rem;
+      color: var(--btn1-color);
+  }
+  .clint_comment_box .fa-quote-right{
+      position: absolute;
+      right: 40px;
+      font-size: 3rem;
+      color: var(--btn1-color);
+  }
+  .carousel_right_side{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background-color: var(--box-color);
+    box-shadow: var(--outer-shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  .carousel_left_side{
+      height: 100%;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+  }
+  .carousel-caption{
+    color: #fff;
+    top: 50%;
+  }
+  .carousel-control-prev-icon ,.carousel-control-next-icon{
+      width: 100px;
+      height: 100px;
+      /* background-color: var(--box-color); */
+      background-color: rgb(227, 236, 232);
+      border-radius: 50%;
+      box-shadow: var(--outer-shadow);
+      transition: 0.9s ease-in-out !important;
+  }
+  .carousel-control-prev-icon:hover ,.carousel-control-next-icon:hover{
+      box-shadow: var(--inner-shadow);
+  }
+/* ================ CLINT SAY SECTION CSS CODE END ================== */
+
+
+/* ================ ARTICAL AND BLOG SECTION CSS CODE END ================== */
+.artical_and_blog_section{
+    margin: 20px 0;
+}
+.artical_and_blog_section h1{
+    font-size: 4rem;
+}
+.artical_and_button{
+    display: flex;
+    justify-content: center;
+}
+.like_dis_like_view{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.like_dis_like_view span{
+    margin: 0 5px;
+}
+
+.artical_and_button .brows_artical{
+    display: inline-block;
+    /* background-color: rgb(0, 247, 255); */
+    background-color: var(--box-color) !important;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 2rem; 
+    color: #141414;
+    transition: 0.3s ease-in-out;
+}
+.artical_and_button .brows_artical:hover{
+    background-color: rgb(0, 159, 165);
+    color: #ffffff;
+}
+.card{
+    border-radius: 10px;
+    background-color: var(--box-color);
+    outline: none !important;
+    border: none !important;
+    box-shadow: var(--outer-shadow);
+}
+.card-img-top{
+    border-radius: 5px;
+    box-shadow: var(--inner-shadow) !important;
+}
+.artical_img_box{
+    width: 96%;
+    padding: 10px;
+    box-shadow: var(--inner-shadow);
+    margin: 8px auto;
+}
+.card .card-body{
+    font-size: 2rem;
+}
+.artical_button{
+    font-size: 1.7rem;
+    background-color: var(--box-color);
+    display: flex;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: rgb(0, 89, 255);
+    margin: 10px 0;
+    border: 1px solid rgb(89, 99, 238);
+    /* box-shadow: var(--outer-shadow); */
+}
+.artical_button:hover{
+    color: rgb(74, 135, 248);
+    border: 1px solid rgb(50, 63, 241);
+
+}
+
+/* ================ ARTICAL AND BLOG SECTION CSS CODE END ================== */
+
+
+@media screen and (max-width: 480px) {
+    .home_text h2{
+        font-size: 3rem !important;
+        margin: 10px 0;
+    }
+    .home_text p{
+        font-size: 1.8rem;
+    }
+     .home_text h1{
+        font-size: 2rem;
+    }
+    .home_text .home_a_teg{
+        font-size: 1.3rem;
+        margin: 10px 0;
+    }
+    .home_text .home_b_teg{
+        font-size: 1.3rem;
+        margin: 10px 14px;
+    }
+    .home_text ,.home_img{
+       flex: 0 0 100%;
+       max-width: 100%;
+       padding: 0 15px;
+   }
+   .services_box p{
+    font-size: 1.7rem;
+   }
+   .home_img_box .display_img{
+       width: 300px;
+       height: 350px;
+   }
+   .home_img .home_img_box{
+    width: 300px;
+    height: 300px;
+    margin: 10px 0;
+    /* position: static; */
+    position: relative;
+    /* overflow: hidden; */
+  }
+  .circle{
+    width:30px;
+    height:30px;
+    /* position: static; */
+    animation: circle 6s linear infinite;
+  }
+  
+  @keyframes circle{
+    0%{
+      transform:rotate(0deg)
+                translate(-147px)
+                rotate(0deg);
+    
+    }
+    100%{
+      transform:rotate(360deg)
+                translate(-147px)
+                rotate(-360deg);
+    }
+  }
+  /* .circle{
+      display: none;
+  } */
+  .img_circle{
+    width: 300px;
+    height: 300px;
+    border:3px solid rgb(26, 48, 248);
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+  /* .img_circle ,.main{
+    width: 300px;
+    height: 300px;
+  } */
+  .carousel_right_side{
+    width: 170px !important;
+    height: 170px !important;
+  }
+  .clint_say_img{
+    width: 150px;
+    height: 150px;
+  }
+  .clint_comment_box .fa-quote-left ,.clint_comment_box .fa-quote-right{
+    display: none;
+  }
+.carousel-control-prev-icon ,.carousel-control-next-icon{
+    width: 50px;
+    height: 50px;
+  }
+  .carousel_right_side{
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .carousel_left_side{
+    font-size: 15px;
+    text-align: center;
+  }
+  .carousel_left_side h2{
+      font-size: 2rem;
+  }
+  .about_img_box .about_img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: var(--outer-shadow);
+}
+  .btn_3{
+      width: 90%;
+      text-align: center;
+  }
+}
