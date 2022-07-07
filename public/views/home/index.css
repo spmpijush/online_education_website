@@ -1,677 +1,478 @@
-
-/* ================ HOME MAIN SECTION CSS CODE END ================== */
-.main_full_screen{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.726),rgba(0, 0, 0, 0.808)), url('../../uploads/images/bg2.jpg');
-    background-size:cover;
+/* BANNER SECTION CSS CODE SATRT  */
+.banner_img {
+    background-image: url("../../uploads/home/JUKT973.jpeg");
     background-repeat: no-repeat;
-    background-position: center;
-}
-.full_screen{
-    padding: 50px 0;
-    min-height: 85vh;
-}
-.home_text{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-}
- .home_text,
- .home_img{
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding: 0 15px;
-    /* border: 1px solid red; */
-}
- .home_text p{
-    font-size: 2.8rem;
-    color: var(--text-white);
-}
- .home_text h2{
-    font-size: 6.3rem;
-    font-weight: 700;
-    color: var(--text-white);
-    margin: 15px 0;
-}
- .home_text h1{
-    font-size: 3rem;
-    font-weight: 600;
-    color: var(--text-white);
-    margin: 10px 0;
-}
-.home_img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid red; */
-
-}
-
-.home_img .home_img_box{
-    width: 450px;
-    height: 450px;
-    /* border: 3px solid rgb(32, 98, 241); */
-    background-color: transparent;
-    position:absolute;
-    border-radius: 50%;
-    /* overflow: hidden; */
-    box-shadow: 3px 3px 4px rgb(255, 255, 255)
-                -3px -3px 4px rgba(255, 255, 255, 0.836);
-}
-
-/* ================ CIRCLE ANIMATION START ================= */
-.img_circle{
-    width:450px;
-    height:450px;
-    border:3px solid rgb(26, 48, 248);
-    margin: auto;
-    border-radius: 50%;
-    overflow: hidden;
-}
-.main{
-    width:450px;
-    height:450px;
-    position:absolute;
-    margin:auto;
-    border-radius:50%; 
-  }
-.circle{
-    width:30px;
-    height:30px;
-    background:rgb(0, 38, 255);
-    border-radius:50%;
-    z-index: 2;
-    position:absolute;
-    top:0; bottom:0; left:0;right:0;
-    overflow:hidden;
-    margin:auto;
-    animation: circle 6s linear infinite;
-  }
-  
-  @keyframes circle{
-    0%{
-      transform:rotate(0deg)
-                translate(-225px)
-                rotate(0deg);
-    
-    }
-    100%{
-      transform:rotate(360deg)
-                translate(-225px)
-                rotate(-360deg);
-    }
-  }
-  
-  
-/* ================ CIRCLE ANIMATION END ================= */
-
-.display_img{
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
     position: relative;
-    width: 450px;
-    height: 500px;
-    /* z-index: -1000000; */
-    /* overflow: hidden; */
-    animation: zoomef infinite alternate 0.8s ;
-}
-@keyframes zoomef {
-    to{transform: scale(0.9);}
-}
-.home_text .home_a_teg{
-    display: inline-block;
-    font-size: 2.6rem;
-    /* background-color: var(--btn1-color); */
-    border: 3px solid rgb(0, 60, 255);
-    padding: 6px 15px;
-    margin: 10px 20px;
-    border-radius: 30px;
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 2px rgb(85, 0, 85);
-    transition: 0.3s ease-in-out;
-}
-.home_text .home_b_teg{
-    display: inline-block;
-    font-size: 2.6rem;
-    /* background-color: var(--btn1-color); */
-    background-color: none;
-    border: 3px solid rgb(0, 60, 255);
-    padding: 6px 15px;
-    margin: 10px 20px;
-    border-radius: 30px;
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 2px rgb(85, 0, 85);
-    transition: 0.3s ease-in-out;
-}
-.home_text .home_a_teg:hover ,.home_text .home_b_teg:hover{
-    /* background-color: rgb(43, 177, 255); */
-    color: rgb(255, 255, 255);
-    /* text-shadow: 2px 2px 2px rgb(112, 8, 107); */
-	transform: translateX(5px);
 }
 
-/* ================ HOME MAIN SECTION CSS CODE END ================== */
-
-
-/* ================ ABOUT SECTION CSS CODE END ================== */
-.main_about_section h1{
-    font-size: 4rem;
-}
-.about_img_box{
+.side_banner {
+    position: relative;
+    position: absolute;
+    width: 65%;
+    height: 100% !important;
+    background-color: #116eee;
+    z-index: 1;
+    transform: skewX(14deg);
+    left: -7%;
     display: flex;
     justify-content: center;
-    /* border-radius: 19px; */
-    background: var(--box-color);
-    box-shadow:  var(--inner-shadow); 
-    border-radius: 10px;
+    align-items: center;
+}
+
+.side_banner .content_box {
+    width: 550px;
+    height: 400px !important;
+    /* border: 1px solid rgb(0, 204, 255); */
+    transform: skewX(-14deg);
+}
+
+.side_banner .content_box h1 {
+    font-weight: bold;
+    color: white;
+}
+
+.side_banner .content_box h2 {
+    font-weight: bold;
+    color: white;
+    padding: 10px 0;
+    letter-spacing: 1px;
+}
+
+.side_banner .content_box .explore_button {
+    display: inline-block;
+    margin-top: 30px !important;
+    padding: 15px 15px;
+    font-size: 1.7rem;
+    outline: none;
+    border: none;
+    background-color: rgb(84, 167, 140);
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.side_banner .content_box .explore_button:hover {
+    background-color: rgb(83, 187, 152);
+}
+
+/* ================== OFFER SECTION CSS CODE START ================== */
+.offer_content_box {
+    height: 253px;
+    overflow: hidden;
+    background-color: #cfd8d8;
+    border-radius: 8px;
+    margin: 50px 0;
+}
+
+.offer_content_box .left_side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
 }
-.btn_3{
-    /* margin-top: 30px; */
+
+.offer_content_box .left_side small {
+    margin: 5px 0;
+    font-weight: bold;
+    color: rgb(10, 116, 116);
+}
+
+.offer_content_box .left_side h2 {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.offer_content_box .offer_button {
+    margin: 10px 0;
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.6rem;
+    outline: none;
+    border: none;
+    background-color: rgb(84, 167, 140);
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+/* ================== OFFER SECTION CSS CODE END ================== */
+
+
+.on_select_button {
+    background: var(--btn1-color) !important;
+    color: rgb(255, 255, 255);
+}
+
+/* BANNER SECTION CSS CODE END  */
+
+/* =================== COURSES SECTION START =================== */
+#software .course_top {
+    background-color: #af11ee;
+}
+
+#software .fee_amount {
+    background-color: #af11ee;
+}
+
+#hardware .course_top {
+    background-color: #68af05;
+}
+
+#hardware .fee_amount {
+    background-color: #68af05;
+}
+
+.courses_list .course_main_header h1 {
+    font-size: 4rem !important;
+}
+
+.courses_list .course_item {
+    background-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.courses_list .course_top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    background-color: #116eee;
+    position: relative;
+    border-radius: 8px;
+}
+
+.courses_list .course_top .img_position {
+    transform: translateX(14px);
+    width: 100px;
+}
+
+.courses_list .course_buttom {
+    padding: 10px 5px;
+}
+
+.courses_list .course_buttom i {
+    color: rgb(200, 200, 4);
+}
+
+.courses_list .course_buttom .fee_amount {
+    padding: 5px 9px;
+    background-color: #116eee;
+    border-radius: 4px;
+}
+
+.courses_list .course_top .course_top_left {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.courses_list .course_top .course_top_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+.all_button_action {
+    cursor: pointer;
+}
+
+/* =================== COURSES SECTION END =================== */
+
+
+
+/*================= OUR MEMBER SECTION START==================  */
+.member_box {
+    background-color: aliceblue;
+    box-shadow: 2px 2px 4px rgb(162, 157, 157);
+    border-radius: 10px;
+}
+
+/*================ OUR MEMBER SECTION END ====================== */
+
+/*================ FAQ SECTION SECTION START ====================== */
+.faq_box {
+    /* border: 1px solid red; */
+    width: calc(100vw - 50vw);
+    margin: 0 auto;
+    font-size: 1.6rem;
+}
+
+.faq_box button {
+    font-size: 1.8rem;
+}
+
+/*================ FAQ SECTION SECTION END ====================== */
+
+/* ================= CONTACT US CSS CODE START ===================== */
+/* contuct section style start  */
+.contuct_section {
+    padding: 8rem 0 8rem;
+    min-height: 100vh;
+}
+
+
+.contuct_section .contuct_item {
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.contuct_section .contuct_item:hover {
+    box-shadow: var(--inner-shadow);
+    transition: all 0.7s ease;
+
+}
+
+input:focus,
+textarea:focus {
+    border: none;
+    outline: none;
+}
+
+.contuct_section .contuct_item_inner {
+    padding: 3rem 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.contuct_section .contuct_item_inner:hover {
+    /* background-color: #90def0; */
+    transition: all 2s ease;
+    text-decoration: none;
+}
+
+.btn_1 {
+    margin-top: 30px;
     padding: 10px 25px;
     font-size: 1.6rem;
     font-weight: 500;
-    color:rgb(10, 104, 245);
+    color: rgb(10, 73, 245);
     background-color: transparent;
     line-height: 1.5;
     cursor: pointer;
     border-radius: 30px;
-    display: inline-block;
-    border: none;
     transition: all 0.3s ease;
-  }
-  .btn_3.active{
-      box-shadow: var(--inner-shadow) !important;
-  }
-  
-  .btn_3::after{
-    border-radius: 30px;
-  }
-.about_img_box .about_img{
-    width: 100%;
-    height: 350px;
-    border-radius: 10px;
-    box-shadow: var(--outer-shadow);
-}
-.about_me_section p{
-    font-size: 2.2rem;
-}
-.about_me_section .view_my_cv ,.about_me_section .hire_me{
-    font-size: 2rem;
-    display: inline-block !important;
-    padding: 8px 15px;
-    background-color: var(--box-color);
-    color: var(--btn1-color);
-    border-radius: 5px;
-    margin: 20px 10px;
-    transition: 3s ease-in-out;
-    box-shadow: var(--outer-shadow);
-}
-.about_me_section .view_my_cv:hover ,.about_me_section .hire_me:hover{
-    box-shadow: var(--inner-shadow);
-	/* transform: translateX(5px); */
-}
-/* ================ ABOUT SECTION CSS CODE END ================== */
-
-/* ================ SERVICES SECTION CSS CODE END ================== */
-.main_services_section h1{
-    font-size: 4rem;
-}
-.main_services_section{
-    margin-top: 9rem!important;
-}
-.main_services_section p{
-    font-size: 2rem;
-}
-.services_box{
-    background-color: var(--box-color);
-    border-radius: 5px;
-    padding: 15px;
-    transition: 0.3s ease-in-out;
-    box-shadow: var(--outer-shadow);
-    height: 360px;
-    overflow: hidden;
-}
-.services_box:hover{
-    
-    transform: translateY(-5px);
-}
-.services_box .icon_style{
-    width: 70px;
-    height: 70px;
-    padding: 16px ;
-    
-    font-size: 3.2rem;
-    background-color: var(--box-color);
-    color: #0066ff;
-    border-radius: 50%;
-    box-shadow: var(--outer-shadow);
-    margin: 10px 0;
-    transition: all ease-in-out 0.4s;
-}
-.services_box .icon_style:hover{
-    box-shadow: var(--inner-shadow);
-}
-.services_box h2{
-    font-size: 2.8rem;
-    margin-bottom: 8px;
-}
-.services_box p{
-    font-size: 1.9rem;
-}
-/* ================ SERVICES SECTION CSS CODE END ================== */
-
-
-
-/* ================ PORTFOLIO SECTION CSS CODE END ================== */
-.main_portfolio_section h1{
-   font-size: 4rem;
-}
-.portfolio_box{
-    box-shadow: var(--outer-shadow);
-    position: relative;
-}
-.portfolio_box h2{
-    padding-top: 10px;
-    margin-bottom: 0rem !important;
-    text-shadow: 2px 2px 3px rgb(148, 143, 143);
-    font-size: 2.3rem;
-}
-.portfolio_box .fa-paper-plane{
-    position: absolute;
-    left: 28px;
-    animation:sendbutton alternate infinite 0.6s;
-}
-@keyframes sendbutton {
-    to{transform: translateX(20px);}
-}
-.portfolio_img_style{
-    width: 100%;
-    height: 200px;
-    padding: 12px;
-    transition: 0.5s ease-in-out;
-    transform: scale(0.95);
-    box-shadow: var(--inner-shadow);
-}
-.view_all_project{
-	font-size: 1.8rem;
-	border: none;
-	background-color:var(--box-color);
-	color: var(--btn1-color);
-	display: inline-block;
-	padding: 5px 15px;
-	border-radius: 5px;
-    box-shadow: var(--outer-shadow);
-	/* text-shadow: 1px 1px 2px rgb(29, 28, 29); */
-	transition: 0.3s ease-in-out;
-  }
-  .view_all_project:hover{
-	/* background-color: rgb(191, 1, 230); */
-	transform: translateX(5px);
-  }
-.main_portfolio_section .portfolio_box{
-    background-color: var(--box-color);
-}
-.price{
-    font-size: 35px;
-    color: #00ff13;
-}
-.start_and_preview{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 10px;
-}
-.portfolio_item_heading{
-    padding: 15px 0;
-}
-.start_and_preview .fa-star{
-    color: #e1f100;
-}
-.start_and_preview .fa-cart-plus{
-    margin: 0 10px;
-    padding: 9px;
-    border: 1px solid rgb(136, 130, 130);
-    color: #0066ff;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
-.start_and_preview .fa-cart-plus:hover{
-    background-color: #ff0095;
-    color: white;
-}
-.start_and_preview .live_preview_button{
     display: inline-block;
-    outline: none !important;
     border: none;
-    /* background-color: #01697c; */
-    border: 1px solid rgb(34, 74, 255);
-    padding: 5px;
-    color: rgb(28, 88, 253);
-    cursor: pointer;
-}
-.portfolio_box:hover .portfolio_img_style{
-    transform: scale(1);
-}
-.hover_view_more{
-    /* border: 1px solid red !important; */
-    overflow: hidden;
-    z-index: 2;
-    width: 95%;
-    position: absolute;
-    top: 10px;
-    left: 9px;
-    margin: auto;
-    height: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    visibility: hidden;
-    background-color: #20ccbe6b;
-    transition: 0.5s ease-in-out all;
-}
-.portfolio_box:hover .hover_view_more{
-    visibility: visible;
-    height: 150px;
-}
-.hover_view_more a{
-    display: inline-block;
-    padding: 10px;
-    border: 1px solid rgb(172, 240, 214);
-    color: white;
-    transition: 0.3s ease-in-out all;
-}
-.hover_view_more a:hover{
-    background-color: #006b7e;
-    color: white;
-}
-/* ================ PORTFOLIO SECTION CSS CODE END ================== */
 
-
-
-/* ================ MY SKILS SECTION CSS CODE START ================== */
-.main_skiils_section h1{
-    font-size: 4rem;
-}
-.progress_bar_color{
-    /* background-image: linear-gradient(to left, #00ff13, #65fd4f, #8dfa73, #abf793, #c4f3b2); */
-    /* background-image: linear-gradient(to right, #cad7ec, #92b6fa, #5d91ff, #2a69ff, #1437ff); */
-    background-image: linear-gradient(to right, #cad7ec, #9fbcf2, #76a0f6, #4d83f8, #1e64f5);
-}
-.progress{
-    background-color: rgb(248, 248, 248);
-    box-shadow: var(--inner-shadow);
-}
-.sub_skils_bg_colo{
-    background-color: var(--box-color);
-    box-shadow: var(--outer-shadow);
-    padding: 20px;
-}
-/* ================ MY SKILS SECTION CSS CODE END ================== */
-
-
-
-/* ================ CLINT SAY SECTION CSS CODE END ================== */
-.main_clint_say_section{
-    margin: 30px 0;
-}
-.main_clint_say_section h1{
-    font-size: 4rem;
-}
-.main_clint_say_section p{
-    font-size: 1.5rem;
-}
-.carousel{
-    position: relative;
-    height: 50vh;
-    margin: 10px 0;
-    background-color: var(--box-color);
-    box-shadow: var(--outer-shadow);
-  }
-  .carousel-inner{
-    width: 60%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-  }
-  .clint_say_img{
-      width: 260px;
-      height: 260px;
-      border-radius: 50%;
-      background-color: var(--box-color);
-      box-shadow: var(--inner-shadow);
-  }
-  .clint_comment_box{
-      position: relative;
-  }
-  .clint_comment_box .fa-quote-left{
-      position: absolute;
-      top: -40px;
-      font-size: 3rem;
-      color: var(--btn1-color);
-  }
-  .clint_comment_box .fa-quote-right{
-      position: absolute;
-      right: 40px;
-      font-size: 3rem;
-      color: var(--btn1-color);
-  }
-  .carousel_right_side{
-    width: 280px;
-    height: 280px;
-    border-radius: 50%;
-    background-color: var(--box-color);
-    box-shadow: var(--outer-shadow);
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-  }
-  .carousel_left_side{
-      height: 100%;
-      display: flex;
-      justify-content: start;
-      align-items: center;
-  }
-  .carousel-caption{
-    color: #fff;
-    top: 50%;
-  }
-  .carousel-control-prev-icon ,.carousel-control-next-icon{
-      width: 100px;
-      height: 100px;
-      /* background-color: var(--box-color); */
-      background-color: rgb(227, 236, 232);
-      border-radius: 50%;
-      box-shadow: var(--outer-shadow);
-      transition: 0.9s ease-in-out !important;
-  }
-  .carousel-control-prev-icon:hover ,.carousel-control-next-icon:hover{
-      box-shadow: var(--inner-shadow);
-  }
-/* ================ CLINT SAY SECTION CSS CODE END ================== */
-
-
-/* ================ ARTICAL AND BLOG SECTION CSS CODE END ================== */
-.artical_and_blog_section{
-    margin: 20px 0;
-}
-.artical_and_blog_section h1{
-    font-size: 4rem;
-}
-.artical_and_button{
-    display: flex;
-    justify-content: center;
-}
-.like_dis_like_view{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.like_dis_like_view span{
-    margin: 0 5px;
 }
 
-.artical_and_button .brows_artical{
-    display: inline-block;
-    /* background-color: rgb(0, 247, 255); */
-    background-color: var(--box-color) !important;
-    padding: 10px 15px;
+.btn_1::after {
     border-radius: 30px;
-    font-size: 2rem; 
-    color: #141414;
-    transition: 0.3s ease-in-out;
-}
-.artical_and_button .brows_artical:hover{
-    background-color: rgb(0, 159, 165);
-    color: #ffffff;
-}
-.card{
-    border-radius: 10px;
-    background-color: var(--box-color);
-    outline: none !important;
-    border: none !important;
-    box-shadow: var(--outer-shadow);
-}
-.card-img-top{
-    border-radius: 5px;
-    box-shadow: var(--inner-shadow) !important;
-}
-.artical_img_box{
-    width: 96%;
-    padding: 10px;
-    box-shadow: var(--inner-shadow);
-    margin: 8px auto;
-}
-.card .card-body{
-    font-size: 2rem;
-}
-.artical_button{
-    font-size: 1.7rem;
-    background-color: var(--box-color);
-    display: flex;
-    padding: 5px 15px;
-    border-radius: 5px;
-    color: rgb(0, 89, 255);
-    margin: 10px 0;
-    border: 1px solid rgb(89, 99, 238);
-    /* box-shadow: var(--outer-shadow); */
-}
-.artical_button:hover{
-    color: rgb(74, 135, 248);
-    border: 1px solid rgb(50, 63, 241);
-
 }
 
-/* ================ ARTICAL AND BLOG SECTION CSS CODE END ================== */
 
-
-@media screen and (max-width: 480px) {
-    .home_text h2{
-        font-size: 3rem !important;
-        margin: 10px 0;
-    }
-    .home_text p{
-        font-size: 1.8rem;
-    }
-     .home_text h1{
-        font-size: 2rem;
-    }
-    .home_text .home_a_teg{
-        font-size: 1.3rem;
-        margin: 10px 0;
-    }
-    .home_text .home_b_teg{
-        font-size: 1.3rem;
-        margin: 10px 14px;
-    }
-    .home_text ,.home_img{
-       flex: 0 0 100%;
-       max-width: 100%;
-       padding: 0 15px;
-   }
-   .services_box p{
-    font-size: 1.7rem;
-   }
-   .home_img_box .display_img{
-       width: 300px;
-       height: 350px;
-   }
-   .home_img .home_img_box{
-    width: 300px;
-    height: 300px;
-    margin: 10px 0;
-    /* position: static; */
-    position: relative;
-    /* overflow: hidden; */
-  }
-  .circle{
-    width:30px;
-    height:30px;
-    /* position: static; */
-    animation: circle 6s linear infinite;
-  }
-  
-  @keyframes circle{
-    0%{
-      transform:rotate(0deg)
-                translate(-147px)
-                rotate(0deg);
-    
-    }
-    100%{
-      transform:rotate(360deg)
-                translate(-147px)
-                rotate(-360deg);
-    }
-  }
-  /* .circle{
-      display: none;
-  } */
-  .img_circle{
-    width: 300px;
-    height: 300px;
-    border:3px solid rgb(26, 48, 248);
-    margin: auto;
-    border-radius: 50%;
-    overflow: hidden;
+a:hover {
+    text-decoration: none;
 }
-  /* .img_circle ,.main{
-    width: 300px;
-    height: 300px;
-  } */
-  .carousel_right_side{
-    width: 170px !important;
-    height: 170px !important;
-  }
-  .clint_say_img{
-    width: 150px;
-    height: 150px;
-  }
-  .clint_comment_box .fa-quote-left ,.clint_comment_box .fa-quote-right{
-    display: none;
-  }
-.carousel-control-prev-icon ,.carousel-control-next-icon{
-    width: 50px;
-    height: 50px;
-  }
-  .carousel_right_side{
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-  .carousel_left_side{
-    font-size: 15px;
+
+.contuct_section .contuct_item_inner i {
+    width: 6rem;
+    height: 6rem;
+    font-size: 4rem;
     text-align: center;
-  }
-  .carousel_left_side h2{
-      font-size: 2rem;
-  }
-  .about_img_box .about_img{
+    color: var(--btn1-color);
+    /* color: rgb(10, 73, 245); */
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.contuct_section .contuct_item_inner span {
+    display: block;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--text-black-700);
+    margin: 0.5rem;
+    text-transform: capitalize;
+}
+
+.contuct_section .contuct_item_inner p {
+    font-size: 1.6rem;
+    color: var(--text-black-600);
+    line-height: 1.6rem;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    word-break: break-all;
+}
+
+.contuct_section .contuct_form {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 5rem;
+}
+
+.contuct_section .w_50 {
+    padding: 0 1.5rem;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.contuct_section .input_group {
+    margin: 0 0 2.5rem;
+    transition: all 0.3s ease;
+    border-radius: 3rem;
+}
+
+.contuct_section .input_group::after {
+    border-radius: 3rem;
+}
+
+.contuct_section .input_group .input_controler {
     width: 100%;
-    height: 200px;
-    border-radius: 10px;
-    box-shadow: var(--outer-shadow);
+    height: 4.5rem;
+    display: block;
+    border-radius: 3rem;
+    border: none;
+    background-color: transparent;
+    font-size: 1.6rem;
+    padding: 0 1.5rem;
+    color: var(--text-black-700);
 }
-  .btn_3{
-      width: 90%;
-      text-align: center;
-  }
+
+.contuct_section .input_group textarea.input_controler {
+    height: 18.4rem;
+    padding-top: 1.5rem;
+    resize: none;
+
 }
+
+.contuct_section .submite_btn {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: right;
+    padding: 0 1.5rem;
+}
+
+/* ================= CONTACT US CSS CODE END ===================== */
+
+
+/* MEDIA QUERY CODE START  */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: aliceblue;
+    }
+
+    .side_banner {
+        width: 100%;
+        transform: skewX(0deg);
+        left: 0;
+    }
+
+    .side_banner .content_box {
+        width: 98%;
+        transform: skewX(0deg);
+    }
+
+    .offer_content_box {
+        height: auto;
+        overflow: hidden;
+        margin: 20px 0;
+    }
+
+    .offer_content_box .offer_button {
+        padding: 8px;
+        font-size: 1.2rem;
+    }
+
+    .faq_box {
+        /* border: 1px solid red; */
+        width: calc(100vw - 5vw);
+        margin: 0 auto;
+        font-size: 1.6rem;
+    }
+
+    .contuct_section .contuct_item_inner {
+        /* padding: 3rem 1.5rem; */
+        border-radius: 1rem;
+        text-align: center;
+        width: 100%;
+        height: 170px;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: aliceblue;
+    }
+
+    .side_banner {
+        width: 100%;
+        transform: skewX(0deg);
+        left: 0;
+    }
+
+    .side_banner .content_box {
+        width: 98%;
+        transform: skewX(0deg);
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: aliceblue;
+    }
+
+    .side_banner {
+        width: 100%;
+        transform: skewX(0deg);
+        left: 0;
+    }
+
+    .side_banner .content_box {
+        width: 98%;
+        transform: skewX(0deg);
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    body {
+        background-color: aliceblue;
+    }
+
+    .side_banner {
+        width: 100%;
+        transform: skewX(0deg);
+        left: 0;
+    }
+
+    .side_banner .content_box {
+        width: 98%;
+        transform: skewX(0deg);
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    body {
+        background-color: aliceblue;
+    }
+
+    .side_banner {
+        width: 100%;
+        transform: skewX(0deg);
+        left: 0;
+    }
+
+    .side_banner .content_box {
+        width: 98%;
+        transform: skewX(0deg);
+    }
+}
+
+/* MEDIA QUERY CODE END  */
